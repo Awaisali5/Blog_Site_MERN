@@ -17,7 +17,7 @@ const app = express();
 
 app.use(express.json({extended: true}))
 app.use(express.urlencoded({extended:true}))
-app.use(cors({credentials:true, origin: "http://localhost:3000", methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',}))
+app.use(cors({credentials:true, origin: "https://blog-site-mern-qf7h.vercel.app/", methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',}))
 app.use(upload())
 app.use('/uploads', express.static(__dirname + '/uploads'))
 
