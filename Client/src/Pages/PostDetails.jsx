@@ -26,7 +26,7 @@ const PostDetails = () => {
       setIsLoading(true);
       try {
         const response = await axios.get(
-          `https://blog-site-mern-qf7h.vercel.app/api/posts/${id}`
+          `https://blog-site-mern.vercel.app/api/posts/${id}`
         );
         setPost(response.data);
        
@@ -71,7 +71,7 @@ const PostDetails = () => {
             <h1>{post.title}</h1>
             <div className="post-detail-thumbnail">
               <img
-                src={`http://localhost:5000/uploads/${post.thumbnail}`}
+                src={`https://blog-site-mern.vercel.app/uploads/${post.thumbnail}`}
                 alt=""
               />
             </div>

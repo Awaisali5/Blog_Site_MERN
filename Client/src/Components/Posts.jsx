@@ -12,7 +12,7 @@ const Posts = () => {
     const fetchPosts = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get("https://blog-site-mern-qf7h.vercel.app/api/posts");
+        const response = await axios.get("https://blog-site-mern.vercel.app/api/posts");
         // console.log(response)
         setPosts(response?.data);
       } catch (error) {

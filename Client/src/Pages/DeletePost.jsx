@@ -25,7 +25,7 @@ const DeletePost = ({postId: id}) => {
   const removePost = async () => {
     setIsLoading(true)
     try {
-      const res = await axios.delete(`https://blog-site-mern-qf7h.vercel.app/api/posts/${id}`, {
+      const res = await axios.delete(`https://blog-site-mern.vercel.app/api/posts/${id}`, {
         withCredentials: true,
         headers: { Authorization: `Bearer ${token}` }
       });

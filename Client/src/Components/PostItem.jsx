@@ -22,7 +22,7 @@ const PostItem = ({
     <>
       <article className="post">
         <div className="post_thumbnail">
-          <img src={`https://blog-site-mern-qf7h.vercel.app/uploads/${thumbnail}`} alt={title} />
+          <img src={`https://blog-site-mern.vercel.app/uploads/${thumbnail}`} alt={title} />
         </div>
         <div className="post_content">
           <Link to={`/posts/${PostId}`}>

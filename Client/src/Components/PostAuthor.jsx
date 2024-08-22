@@ -24,7 +24,7 @@ const PostAuthor = ({ authorId, createAt }) => {
     const getAuthor = async () => {
       try { 
         const res = await axios.get(
-          `https://blog-site-mern-qf7h.vercel.app/api/users/${authorId}`
+          `https://blog-site-mern.vercel.app/api/users/${authorId}`
         );
         setAuthor(res?.data);
         // console.log(res.data)
