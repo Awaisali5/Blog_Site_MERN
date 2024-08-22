@@ -44,7 +44,7 @@ const Authors = () => {
           return <Link key={id} to={`/posts/users/${id}`} className="author" >
            
             <div className="author-avatar">
-              <img src={`http://localhost:5000/uploads/${avatar}`} alt={`Image of ${name}`} />
+              <img src={`https://blog-site-mern-qf7h.vercel.app/uploads/${avatar}`} alt={`Image of ${name}`} />
             </div>
 
             <div className="author-info">

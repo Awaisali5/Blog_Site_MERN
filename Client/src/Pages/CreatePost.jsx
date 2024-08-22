@@ -63,7 +63,7 @@ const CreatePost = () => {
 
 
     try {
-      const response= await axios.post(`http://localhost:5000/api/posts/`, postData, {withCredentials: true, headers: {Authorization: `Bearer ${token}`}})
+      const response= await axios.post(`https://blog-site-mern-qf7h.vercel.app/api/posts/`, postData, {withCredentials: true, headers: {Authorization: `Bearer ${token}`}})
       if(response.status == 200){
          navigate('/')
       }

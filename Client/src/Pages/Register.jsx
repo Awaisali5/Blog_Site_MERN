@@ -20,7 +20,7 @@ const Register = () => {
     console.log("1");
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/users/register`,
+        `https://blog-site-mern-qf7h.vercel.app/api/users/register`,
         userData
       );
       console.log(response);

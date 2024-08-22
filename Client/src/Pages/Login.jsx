@@ -26,7 +26,7 @@ const Login = () => {
     setError("")
 
     try {
-      const response = await axios.post("http://localhost:5000/api/users/login",userData )
+      const response = await axios.post("https://blog-site-mern-qf7h.vercel.app/api/users/login",userData )
       // console.log(response)
       const user = await response.data;
       setCurrentUser(user)

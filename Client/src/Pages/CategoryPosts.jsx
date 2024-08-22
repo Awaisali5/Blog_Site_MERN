@@ -16,7 +16,7 @@ const CategoryPosts = () => {
     const fetchPosts = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get(`http://localhost:5000/api/posts/categories/${category}` )
+        const response = await axios.get(`https://blog-site-mern-qf7h.vercel.app/api/posts/categories/${category}` )
         // console.log(response)
         setPosts(response?.data)
         

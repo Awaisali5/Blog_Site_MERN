@@ -26,7 +26,7 @@ const PostDetails = () => {
       setIsLoading(true);
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/posts/${id}`
+          `https://blog-site-mern-qf7h.vercel.app/api/posts/${id}`
         );
         setPost(response.data);
        

@@ -34,7 +34,7 @@ const UserProfile = () => {
   useEffect(() => {
     const getUser = async () => {
       const response = await axios.get(
-        `http://localhost:5000/api/users/${currentUser.userId}`,
+        `https://blog-site-mern-qf7h.vercel.app/api/users/${currentUser.userId}`,
         {
           withCredentials: true,
           headers: { Authorization: `Bearer ${token}` },

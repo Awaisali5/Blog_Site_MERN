@@ -36,7 +36,7 @@ const Dashboard = () => {
 
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/posts/users/${id}`,
+          `https://blog-site-mern-qf7h.vercel.app/api/posts/users/${id}`,
           {
             withCredentials: true,
             headers: { Authorization: `Bearer ${token}` },

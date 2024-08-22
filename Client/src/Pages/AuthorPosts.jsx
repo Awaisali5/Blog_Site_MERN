@@ -16,7 +16,7 @@ const AuthorPosts = () => {
     const fetchPosts = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get(`http://localhost:5000/api/posts/users/${id}` )
+        const response = await axios.get(`https://blog-site-mern-qf7h.vercel.app/api/posts/users/${id}` )
         console.log(response.data)
         setPosts(response?.data)
         
