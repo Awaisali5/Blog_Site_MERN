@@ -27,8 +27,11 @@ app.use('/uploads', express.static(__dirname + '/uploads'))
 app.use('/api/users', userRoutes)
 app.use('/api/posts', postRoutes)
 
-app.use('/test', (req,res) => {
-  res.send("Server is working on Port",process.env.PORT)
+app.get('/', (req, res) => {
+  res.status(200).json({
+      message: "Server is running successfully!",
+      status: "OK"
+  });
 });
 
 // middleware
