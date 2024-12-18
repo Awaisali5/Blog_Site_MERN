@@ -27,7 +27,7 @@ app.use('/uploads', express.static(__dirname + '/uploads'))
 app.use('/api/users', userRoutes)
 app.use('/api/posts', postRoutes)
 
-app.use("/test-server", (req,res) => {
+app.use("/", (req,res) => {
   res.send("Server is working on Port",process.env.PORT)
 });
 
